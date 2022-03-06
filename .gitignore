@@ -1,0 +1,24 @@
+# IDEs
+.idea/
+.vscode/
+
+# Chalice deployment files
+.chalice/deployments/
+.chalice/venv/
+
+# Environments
+venv/
+
+# Distribution / packaging
+.Python
+build/
+dist/
+pip-wheel-metadata/
+*.egg-info/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Pipeline generated files
+artifact.zip
+dist/*

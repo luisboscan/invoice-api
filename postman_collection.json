@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "6035a262-7db4-40ce-bd2a-02eed66c1d2c",
+		"name": "Invoice API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Invoices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/invoices",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"invoices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Invoice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"date\": \"2022-01-13\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/invoices",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"invoices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Invoice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/invoices/a50a5f5b-8117-4eb8-8fd2-2baf648edd8e",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"invoices",
+						"a50a5f5b-8117-4eb8-8fd2-2baf648edd8e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Invoice Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/invoices/a50a5f5b-8117-4eb8-8fd2-2baf648edd8e/items",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"invoices",
+						"a50a5f5b-8117-4eb8-8fd2-2baf648edd8e",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Invoice Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"units\": 1,\r\n    \"description\": \"blablabla\",\r\n    \"amount\": -1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/invoices/a50a5f5b-8117-4eb8-8fd2-2baf648edd8e/items",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"invoices",
+						"a50a5f5b-8117-4eb8-8fd2-2baf648edd8e",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Invoice Item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/invoices/a50a5f5b-8117-4eb8-8fd2-2baf648edd8e/items/7efcf998-c4d0-4b7d-bed7-a02cad6e268d",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"invoices",
+						"a50a5f5b-8117-4eb8-8fd2-2baf648edd8e",
+						"items",
+						"7efcf998-c4d0-4b7d-bed7-a02cad6e268d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

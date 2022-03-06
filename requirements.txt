@@ -1,0 +1,6 @@
+flask
+SQLAlchemy
+Flask-SQLAlchemy
+cryptography
+importlib_resources
+jsonschema
